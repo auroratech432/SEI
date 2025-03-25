@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #d8c34f;
+
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            display: block;
+            color: #d8c34f;
+
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            background-color: #d8c34f;
+
+            color: #000;
+        }
+        .container {
+            margin-left: 260px;
+            padding: 20px;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="sidebar">
+        <h4 class="text-center">Menu</h4>
+        <a href="index.html">🏠 Página Inicial</a>
+        <a href="listagem_horarios.html">📅 Cronograma</a>
+        <a href="gerenciamento_horarios.html">➕ Adicionar/Gerenciar Horários</a>
+        
+        <!-- "Sair" movido para o final -->
+        <div style="position: absolute; bottom: 20px; width: 100%;">
+            <a href="login.html">🚪 Sair</a>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h1 class="text-center">Bem-vindo ao Sistema</h1>
+        <img src="logo.png" alt="Logo da Marca" class="logo">
+        
+        <h2 class="mt-4">Cronograma</h2>
+        <table class="table table-dark table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Professor</th>
+                    <th>Matéria</th>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>Matemática</td>
+                    <td>Segunda-feira</td>
+                    <td>08:00 - 09:30</td>
+                </tr>
+                <tr>
+                    <td>Maria Oliveira</td>
+                    <td>História</td>
+                    <td>Terça-feira</td>
+                    <td>10:00 - 11:30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- Fechando corretamente a div -->
+
+</body>
+</html>
